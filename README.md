@@ -11,10 +11,10 @@ for the M2S Armband.
 Files used to manufacture the PCB, including Gerber files, BOM, and PnP are
 located in the JLCPCB folder.
 
-## 2.5mm Connectors
+## 2.5mm TRS Connectors
 
-This board uses 2.5mm Right Angle Connectors, commonly used with audio, for 
-receiving analog signals. An example part compatible with this board is the
+This board uses 2.5mm Right Angle TRS Connectors, commonly used with audio, 
+for receiving analog signals. An example part compatible with this board is the
 [SJ1-2503A by Same Sky](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/SJ1-2503A/738680)
 
 ## I2C Addresses

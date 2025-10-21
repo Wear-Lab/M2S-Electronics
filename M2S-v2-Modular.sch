@@ -3008,92 +3008,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="ADS1115IDGST">
-<packages>
-<package name="SOP50P490X110-10N">
-<circle x="-3.5" y="1.25" radius="0.1" width="0.2" layer="21"/>
-<circle x="-3.5" y="1.25" radius="0.1" width="0.2" layer="51"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-3.135" y1="1.75" x2="3.135" y2="1.75" width="0.05" layer="39"/>
-<wire x1="-3.135" y1="-1.75" x2="3.135" y2="-1.75" width="0.05" layer="39"/>
-<wire x1="-3.135" y1="1.75" x2="-3.135" y2="-1.75" width="0.05" layer="39"/>
-<wire x1="3.135" y1="1.75" x2="3.135" y2="-1.75" width="0.05" layer="39"/>
-<text x="-3" y="-2" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
-<text x="-3" y="2" size="1.016" layer="25">&gt;NAME</text>
-<smd name="1" x="-2.15" y="1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="2" x="-2.15" y="0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="3" x="-2.15" y="0" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="4" x="-2.15" y="-0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="5" x="-2.15" y="-1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="6" x="2.15" y="-1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="7" x="2.15" y="-0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="8" x="2.15" y="0" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="9" x="2.15" y="0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-<smd name="10" x="2.15" y="1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ADS1115IDGST">
-<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.41" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.41" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.41" layer="94"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.41" layer="94"/>
-<text x="-12.7" y="16.24" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-12.7" y="-19.24" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="ADDR" x="-17.78" y="10.16" length="middle" direction="in"/>
-<pin name="AIN0" x="-17.78" y="5.08" length="middle" direction="in"/>
-<pin name="AIN1" x="-17.78" y="2.54" length="middle" direction="in"/>
-<pin name="AIN2" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="AIN3" x="-17.78" y="-2.54" length="middle" direction="in"/>
-<pin name="ALERT/RDY" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="SCL" x="-17.78" y="-7.62" length="middle" direction="in"/>
-<pin name="SDA" x="-17.78" y="-10.16" length="middle"/>
-<pin name="VDD" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ADS1115IDGST" prefix="U">
-<description> &lt;a href="https://pricing.snapeda.com/parts/ADS1115IDGST/Texas%20Instruments/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
-<gates>
-<gate name="A" symbol="ADS1115IDGST" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP50P490X110-10N">
-<connects>
-<connect gate="A" pin="ADDR" pad="1"/>
-<connect gate="A" pin="AIN0" pad="4"/>
-<connect gate="A" pin="AIN1" pad="5"/>
-<connect gate="A" pin="AIN2" pad="6"/>
-<connect gate="A" pin="AIN3" pad="7"/>
-<connect gate="A" pin="ALERT/RDY" pad="2"/>
-<connect gate="A" pin="GND" pad="3"/>
-<connect gate="A" pin="SCL" pad="10"/>
-<connect gate="A" pin="SDA" pad="9"/>
-<connect gate="A" pin="VDD" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="In Stock"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/ADS1115IDGST/Texas+Instruments/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value="                                                      16-bit, 860-SPS, 4-channel, delta-sigma ADC with PGA, oscillator, VREF, comparator and I2C                                              "/>
-<attribute name="MF" value="Texas Instruments"/>
-<attribute name="MP" value="ADS1115IDGST"/>
-<attribute name="PACKAGE" value="VSSOP-10 Texas Instruments"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/ADS1115IDGST/Texas+Instruments/view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="con-JST-SH">
 <packages>
 <package name="SM05B-SRSS-TB">
@@ -3141,6 +3055,92 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="ADS1015IDGST">
+<packages>
+<package name="SOP50P490X110-10N">
+<circle x="-3.5" y="1.25" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.5" y="1.25" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-3.135" y1="1.75" x2="3.135" y2="1.75" width="0.05" layer="39"/>
+<wire x1="-3.135" y1="-1.75" x2="3.135" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="-3.135" y1="1.75" x2="-3.135" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="3.135" y1="1.75" x2="3.135" y2="-1.75" width="0.05" layer="39"/>
+<text x="-3" y="-2" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3" y="2" size="1.016" layer="25">&gt;NAME</text>
+<smd name="1" x="-2.15" y="1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="2" x="-2.15" y="0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="3" x="-2.15" y="0" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="4" x="-2.15" y="-0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="5" x="-2.15" y="-1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="6" x="2.15" y="-1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="7" x="2.15" y="-0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="8" x="2.15" y="0" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="9" x="2.15" y="0.5" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+<smd name="10" x="2.15" y="1" dx="1.47" dy="0.28" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ADS1015IDGST">
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.41" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.41" layer="94"/>
+<text x="-12.7" y="18.78" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-21.78" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="ADDR" x="-17.78" y="10.16" length="middle" direction="in"/>
+<pin name="AIN0" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="AIN1" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="AIN2" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="AIN3" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="SCL" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="SDA" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VDD" x="17.78" y="15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="ALERT/RDY" x="17.78" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADS1015IDGST" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/ADS1015IDGST/Texas%20Instruments/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="ADS1015IDGST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP50P490X110-10N">
+<connects>
+<connect gate="A" pin="ADDR" pad="1"/>
+<connect gate="A" pin="AIN0" pad="4"/>
+<connect gate="A" pin="AIN1" pad="5"/>
+<connect gate="A" pin="AIN2" pad="6"/>
+<connect gate="A" pin="AIN3" pad="7"/>
+<connect gate="A" pin="ALERT/RDY" pad="2"/>
+<connect gate="A" pin="GND" pad="3"/>
+<connect gate="A" pin="SCL" pad="10"/>
+<connect gate="A" pin="SDA" pad="9"/>
+<connect gate="A" pin="VDD" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/ADS1015IDGST/Texas+Instruments/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value="                                                      12-bit, 3.3-kSPS, 4-channel, delta-sigma ADC with PGA, oscillator, VREF, comparator and I2C                                              "/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MP" value="ADS1015IDGST"/>
+<attribute name="PACKAGE" value="VSSOP-10 Texas Instruments"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/ADS1015IDGST/Texas+Instruments/view-part/?ref=snap"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3282,7 +3282,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND21" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="U7" library="ADS1115IDGST" deviceset="ADS1115IDGST" device=""/>
 <part name="C30" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0402-6.3V-10%-X7R" package3d_urn="urn:adsk.eagle:package:41385089/1" value="0.1uF"/>
 <part name="SUPPLY34" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND24" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
@@ -3302,6 +3301,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R29" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0402-1/16W-1%" package3d_urn="urn:adsk.eagle:package:39657/2" value="10k"/>
 <part name="R30" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0402-1/16W-1%" package3d_urn="urn:adsk.eagle:package:39657/2" value="10k"/>
 <part name="R31" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0402-1/16W-1%" package3d_urn="urn:adsk.eagle:package:39657/2" value="10k"/>
+<part name="U7" library="ADS1015IDGST" deviceset="ADS1015IDGST" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3328,13 +3328,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="289.56" y="12.7" size="2.54" layer="94" font="vector">In-Amp:
 MFB:
 VRef:
-ADC:
-IMU:</text>
+ADC:</text>
 <text x="304.8" y="12.7" size="2.54" layer="94" font="vector">INA333
 TSU104
 REF2033
-ADS1115
-LSM6DSOX</text>
+ADS1015</text>
 <text x="289.56" y="5.08" size="1.778" layer="94">Amplifier design based on 
 https://doi.org/10.3390/bios11110411</text>
 <wire x1="147.32" y1="274.32" x2="177.8" y2="274.32" width="0.1524" layer="94" style="longdash"/>
@@ -3827,16 +3825,12 @@ https://doi.org/10.3390/bios11110411</text>
 <instance part="GND23" gate="1" x="259.08" y="127" smashed="yes">
 <attribute name="VALUE" x="259.08" y="126.746" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="U7" gate="A" x="322.58" y="152.4" smashed="yes">
-<attribute name="NAME" x="309.88" y="168.64" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="309.88" y="133.16" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
 <instance part="C30" gate="G$1" x="350.52" y="147.32" smashed="yes">
 <attribute name="NAME" x="352.044" y="150.241" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="352.044" y="145.161" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY34" gate="G$1" x="350.52" y="167.64" smashed="yes">
-<attribute name="VALUE" x="350.52" y="170.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY34" gate="G$1" x="350.52" y="170.18" smashed="yes">
+<attribute name="VALUE" x="350.52" y="172.974" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="GND24" gate="1" x="350.52" y="132.08" smashed="yes">
 <attribute name="VALUE" x="350.52" y="131.826" size="1.778" layer="96" font="vector" align="top-center"/>
@@ -3927,6 +3921,10 @@ https://doi.org/10.3390/bios11110411</text>
 <instance part="R31" gate="G$1" x="411.48" y="147.32" smashed="yes">
 <attribute name="NAME" x="411.48" y="148.844" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="411.48" y="145.796" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="U7" gate="A" x="322.58" y="152.4" smashed="yes">
+<attribute name="NAME" x="309.88" y="171.18" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="309.88" y="130.62" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -4258,12 +4256,12 @@ https://doi.org/10.3390/bios11110411</text>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
-<pinref part="U7" gate="A" pin="GND"/>
 <wire x1="350.52" y1="134.62" x2="350.52" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="139.7" x2="340.36" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C30" gate="G$1" pin="2"/>
 <wire x1="350.52" y1="144.78" x2="350.52" y2="139.7" width="0.1524" layer="91"/>
 <junction x="350.52" y="139.7"/>
+<pinref part="U7" gate="A" pin="GND"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -4360,9 +4358,9 @@ https://doi.org/10.3390/bios11110411</text>
 <pinref part="U2" gate="G3" pin="OUT"/>
 </segment>
 <segment>
+<wire x1="302.26" y1="160.02" x2="304.8" y2="160.02" width="0.1524" layer="91"/>
+<label x="302.26" y="160.02" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U7" gate="A" pin="AIN0"/>
-<wire x1="302.26" y1="157.48" x2="304.8" y2="157.48" width="0.1524" layer="91"/>
-<label x="302.26" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4606,9 +4604,9 @@ https://doi.org/10.3390/bios11110411</text>
 <pinref part="U2" gate="G2" pin="OUT"/>
 </segment>
 <segment>
+<wire x1="302.26" y1="157.48" x2="304.8" y2="157.48" width="0.1524" layer="91"/>
+<label x="302.26" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U7" gate="A" pin="AIN1"/>
-<wire x1="302.26" y1="154.94" x2="304.8" y2="154.94" width="0.1524" layer="91"/>
-<label x="302.26" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VIN+2" class="0">
@@ -4651,9 +4649,9 @@ https://doi.org/10.3390/bios11110411</text>
 <pinref part="U2" gate="G4" pin="OUT"/>
 </segment>
 <segment>
+<wire x1="302.26" y1="154.94" x2="304.8" y2="154.94" width="0.1524" layer="91"/>
+<label x="302.26" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U7" gate="A" pin="AIN2"/>
-<wire x1="302.26" y1="152.4" x2="304.8" y2="152.4" width="0.1524" layer="91"/>
-<label x="302.26" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VIN+3" class="0">
@@ -4696,9 +4694,9 @@ https://doi.org/10.3390/bios11110411</text>
 <pinref part="U2" gate="G1" pin="OUT"/>
 </segment>
 <segment>
+<wire x1="302.26" y1="152.4" x2="304.8" y2="152.4" width="0.1524" layer="91"/>
+<label x="302.26" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U7" gate="A" pin="AIN3"/>
-<wire x1="302.26" y1="149.86" x2="304.8" y2="149.86" width="0.1524" layer="91"/>
-<label x="302.26" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -4718,13 +4716,13 @@ https://doi.org/10.3390/bios11110411</text>
 <wire x1="233.68" y1="142.24" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U7" gate="A" pin="VDD"/>
 <pinref part="SUPPLY34" gate="G$1" pin="3.3V"/>
-<wire x1="340.36" y1="165.1" x2="350.52" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="350.52" y1="165.1" x2="350.52" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="167.64" x2="350.52" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="167.64" x2="350.52" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C30" gate="G$1" pin="1"/>
-<wire x1="350.52" y1="165.1" x2="350.52" y2="152.4" width="0.1524" layer="91"/>
-<junction x="350.52" y="165.1"/>
+<wire x1="350.52" y1="167.64" x2="350.52" y2="152.4" width="0.1524" layer="91"/>
+<junction x="350.52" y="167.64"/>
+<pinref part="U7" gate="A" pin="VDD"/>
 </segment>
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -4760,9 +4758,9 @@ https://doi.org/10.3390/bios11110411</text>
 </net>
 <net name="ADDR" class="0">
 <segment>
-<pinref part="U7" gate="A" pin="ADDR"/>
 <wire x1="302.26" y1="162.56" x2="304.8" y2="162.56" width="0.1524" layer="91"/>
 <label x="302.26" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
+<pinref part="U7" gate="A" pin="ADDR"/>
 </segment>
 <segment>
 <wire x1="373.38" y1="172.72" x2="375.92" y2="172.72" width="0.1524" layer="91"/>
@@ -4787,9 +4785,9 @@ https://doi.org/10.3390/bios11110411</text>
 </net>
 <net name="SCL" class="0">
 <segment>
+<wire x1="302.26" y1="149.86" x2="304.8" y2="149.86" width="0.1524" layer="91"/>
+<label x="302.26" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U7" gate="A" pin="SCL"/>
-<wire x1="302.26" y1="144.78" x2="304.8" y2="144.78" width="0.1524" layer="91"/>
-<label x="302.26" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="388.62" y1="142.24" x2="386.08" y2="142.24" width="0.1524" layer="91"/>
@@ -4814,9 +4812,9 @@ https://doi.org/10.3390/bios11110411</text>
 </net>
 <net name="SDA" class="0">
 <segment>
+<wire x1="302.26" y1="144.78" x2="304.8" y2="144.78" width="0.1524" layer="91"/>
+<label x="302.26" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
 <pinref part="U7" gate="A" pin="SDA"/>
-<wire x1="302.26" y1="142.24" x2="304.8" y2="142.24" width="0.1524" layer="91"/>
-<label x="302.26" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="388.62" y1="152.4" x2="386.08" y2="152.4" width="0.1524" layer="91"/>
@@ -4841,9 +4839,9 @@ https://doi.org/10.3390/bios11110411</text>
 </net>
 <net name="RDY" class="0">
 <segment>
+<wire x1="342.9" y1="162.56" x2="340.36" y2="162.56" width="0.1524" layer="91"/>
+<label x="342.9" y="162.56" size="1.016" layer="95" xref="yes"/>
 <pinref part="U7" gate="A" pin="ALERT/RDY"/>
-<wire x1="342.9" y1="157.48" x2="340.36" y2="157.48" width="0.1524" layer="91"/>
-<label x="342.9" y="157.48" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R31" gate="G$1" pin="1"/>
