@@ -1815,33 +1815,31 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <wire x1="46" y1="24" x2="44" y2="24" width="0.28" layer="1"/>
 <wire x1="41.5" y1="21.5" x2="44" y2="24" width="0.28" layer="1"/>
 <contactref element="R29" pad="1"/>
-<contactref element="J6" pad="2"/>
-<wire x1="43" y1="10.92" x2="43" y2="10" width="0.44" layer="1"/>
-<wire x1="43" y1="10" x2="44" y2="9" width="0.44" layer="1"/>
-<wire x1="44" y1="9" x2="44" y2="6.175" width="0.44" layer="1"/>
-<wire x1="41.5" y1="18" x2="44.25" y2="15.25" width="0.28" layer="1"/>
-<wire x1="43.67" y1="10.92" x2="43" y2="10.92" width="0.28" layer="1"/>
-<wire x1="44.25" y1="15.25" x2="44.25" y2="11.5" width="0.28" layer="1"/>
-<wire x1="44.25" y1="11.5" x2="43.67" y2="10.92" width="0.28" layer="1"/>
 <contactref element="U7" pad="9"/>
-<wire x1="41.5" y1="19.85" x2="41.5" y2="18" width="0.28" layer="1"/>
 <wire x1="41.5" y1="19.85" x2="41.5" y2="21.5" width="0.28" layer="1"/>
+<contactref element="J6" pad="4"/>
+<wire x1="43" y1="10.92" x2="43" y2="9.5" width="0.44" layer="1"/>
+<via x="43" y="9.5" extent="1-16" drill="0.35"/>
+<wire x1="43" y1="9.5" x2="46" y2="9.5" width="0.44" layer="16"/>
+<via x="46" y="9.5" extent="1-16" drill="0.35"/>
+<wire x1="46" y1="9.5" x2="46" y2="24" width="0.44" layer="1"/>
+<wire x1="46" y1="6.175" x2="46" y2="9.5" width="0.44" layer="1"/>
 </signal>
 <signal name="RDY">
 <via x="41" y="22" extent="1-16" drill="0.35"/>
 <wire x1="41.5" y1="22.5" x2="41" y2="22" width="0.28" layer="1"/>
-<wire x1="41" y1="22" x2="46" y2="22" width="0.44" layer="16"/>
-<via x="46" y="22" extent="1-16" drill="0.35"/>
+<wire x1="41" y1="22" x2="44" y2="22" width="0.44" layer="16"/>
+<via x="44" y="22" extent="1-16" drill="0.35"/>
 <contactref element="R31" pad="1"/>
-<via x="46" y="7.5" extent="1-16" drill="0.35"/>
-<wire x1="46" y1="7.5" x2="40" y2="7.5" width="0.44" layer="16"/>
+<via x="44" y="7.5" extent="1-16" drill="0.35"/>
+<wire x1="44" y1="7.5" x2="40" y2="7.5" width="0.44" layer="16"/>
 <via x="40" y="7.5" extent="1-16" drill="0.35"/>
 <wire x1="40" y1="7.5" x2="40" y2="10.92" width="0.44" layer="1"/>
-<contactref element="J6" pad="4"/>
-<wire x1="46" y1="7.5" x2="46" y2="6.175" width="0.44" layer="1"/>
-<wire x1="46" y1="22" x2="46" y2="7.5" width="0.44" layer="1"/>
+<wire x1="44" y1="22" x2="44" y2="7.5" width="0.44" layer="1"/>
 <contactref element="U7" pad="2"/>
 <wire x1="41.5" y1="24.15" x2="41.5" y2="22.5" width="0.28" layer="1"/>
+<contactref element="J6" pad="2"/>
+<wire x1="44" y1="6.175" x2="44" y2="7.5" width="0.44" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

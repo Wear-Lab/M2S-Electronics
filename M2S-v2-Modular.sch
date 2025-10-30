@@ -4832,9 +4832,9 @@ https://doi.org/10.3390/bios11110411</text>
 <label x="403.86" y="167.64" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="-2" pin="P"/>
-<wire x1="393.7" y1="116.84" x2="391.16" y2="116.84" width="0.1524" layer="91" style="longdash"/>
-<label x="393.7" y="116.84" size="1.016" layer="95" xref="yes"/>
+<pinref part="J6" gate="-4" pin="P"/>
+<wire x1="393.7" y1="111.76" x2="391.16" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<label x="393.7" y="111.76" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RDY" class="0">
@@ -4849,9 +4849,9 @@ https://doi.org/10.3390/bios11110411</text>
 <label x="403.86" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="-4" pin="P"/>
-<wire x1="393.7" y1="111.76" x2="391.16" y2="111.76" width="0.1524" layer="91" style="longdash"/>
-<label x="393.7" y="111.76" size="1.016" layer="95" xref="yes"/>
+<pinref part="J6" gate="-2" pin="P"/>
+<wire x1="393.7" y1="116.84" x2="391.16" y2="116.84" width="0.1524" layer="91" style="longdash"/>
+<label x="393.7" y="116.84" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
